@@ -4,7 +4,7 @@ from setuptools import setup # , find_packages
 import os
 def read(fname):
   return open(os.path.join(os.path.dirname(__file__), fname)).read()
-  
+
 
 from isitfit import isitfit_version
 
@@ -23,7 +23,7 @@ setup(
     # long_description = read('README.md'),
     long_description = 'Check https://isitfit.autofitcloud.com',
     long_description_content_type="text/markdown",
-    
+
     # packages=find_packages(),
     packages = ['isitfit'],
     include_package_data=True,
@@ -34,6 +34,7 @@ setup(
         'boto3==1.9.219',
         'cachecontrol==0.12.5',
         'lockfile==0.12.2',
+        'git-remote-aws==0.5.3',
         'tabulate==0.8.3',
         'termcolor==1.1.0'
     ],
